@@ -1,0 +1,38 @@
+body {
+    background-color: skyblue;
+}
+
+header {
+    text-align: center;
+    padding: 1px;
+    text-decoration: underline solid rgb(48, 62, 190);
+}
+
+#options {
+    font-size: larger;
+    position: relative;
+    left: 120px;
+}
+
+label:hover {
+    text-decoration: underline solid rgb(48, 62, 190);
+    cursor: pointer;
+}
+
+#button {
+    text-align: center;
+}
+
+button {
+    padding: 2px;
+    font-size: large;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: rgb(48, 62, 190);
+    color: white;
+    cursor: pointer;
+}
