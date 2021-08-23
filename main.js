@@ -1,4 +1,4 @@
-const music = document.getElementById('music');
+import { music, tryIt} from "./music.js";
 const movies = document.getElementById('movies');
 const food = document.getElementById('food');
 const generateButton = document.getElementById('generateMessage');
@@ -9,6 +9,7 @@ let buttonClicked = false
 const clickedHandler = () => {
     buttonClicked = true
 }
+
 
 
 const generateMessage = () => {
@@ -22,7 +23,7 @@ const generateMessage = () => {
         newMessage.innerText = 'this will be the rest of the messages the user will want to message'
     }
 }
-console.log(buttonClicked)
+
 
 
 generateButton.addEventListener('click', generateMessage)
