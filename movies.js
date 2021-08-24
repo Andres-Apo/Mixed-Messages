@@ -39,10 +39,10 @@ const objectAdj = {
 const things = {
     thing1: 'car',
     thing2: 'world',
-    thing3: 'beasts',
-    thing4: 'graphics',
+    thing3: 'beast',
+    thing4: 'graphic',
     thing5: 'media',
-    thing6: 'scenes',
+    thing6: 'scene',
     thing7: 'package',
     thing8: 'studio',
     thing9: 'house',
@@ -55,7 +55,7 @@ const sentence = () => {
     const randomObj = objectAdj[`objAdj${Math.floor(Math.random()* 10)+1}`];
     const randomLoc = things[`thing${Math.floor(Math.random()* 10)+1}`];
 
-    return `${randomSub} ${randomVerb} a ${randomObj} in a ${randomLoc}`
+    return `${randomSub} ${randomVerb} the ${randomObj} in a ${randomLoc}`
 }
 
 
