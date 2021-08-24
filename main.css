@@ -38,8 +38,12 @@ button:hover {
 }
 
 footer {
-    min-height: 100px;
+    min-height: 75px;
     height: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 12px;
+}
+p {
+    margin-left: 10px;
 }

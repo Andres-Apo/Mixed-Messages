@@ -1,4 +1,4 @@
-import { music, tryIt} from "./music.js";
+import musicResorces from "./music.js";
 const movies = document.getElementById('movies');
 const food = document.getElementById('food');
 const generateButton = document.getElementById('generateMessage');
@@ -12,15 +12,21 @@ const clickedHandler = () => {
 
 
 
+
+
 const generateMessage = () => {
-    message.style.backgroundColor = 'rgb(192, 234, 253)'
-    if (buttonClicked === false ) {
-        newMessage.innerText = 'This will be the inial generated message'
-        generateButton.innerText = 'Generate Another one'
-        clickedHandler()
+    if (musicResorces.music.checked === true) {
+        message.style.backgroundColor = 'rgb(192, 234, 253)';
+        if (buttonClicked === false ) {
+            newMessage.innerText = musicResorces.sentence()
+            generateButton.innerText = 'Generate Another one'
+            clickedHandler()
+        } else {
+            // The new Message will need to be defined dependig the topic code
+            newMessage.innerText = musicResorces.sentence()
+        }
     } else {
-        // The new Message will need to be defined dependig the topic code
-        newMessage.innerText = 'this will be the rest of the messages the user will want to message'
+        alert ('Please select a topic')
     }
 }
 

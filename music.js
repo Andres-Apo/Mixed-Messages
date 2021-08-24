@@ -1,64 +1,70 @@
-// const music = document.getElementById('musicLabel');
+const music = document.getElementById('music');
 /* para poder armar el mesanje random de este topico se deben crear 4 objetos que se encarguen de determinar cada parte de la oración */
-const subject = {
-    groups: {
-        band1: 'The Beatles',
-        band2: 'Led Zeppelin',
-        band3: 'Maroon 5',
-        band4: 'Guns & Roses',
-        band5: 'AFI'
-    },
-    musicians: {
-        musician1: 'Justin Biber',
-        musician2: 'Bad Bunny',
-        musician3: 'Jason Derulo',
-        musician4: 'Billy Joel',
-        musician5: 'Mark Anthony',
-    }
+const subjects = {
+    subject1: 'The Beatles',
+    subject2: 'Led Zeppelin',
+    subject3: 'Maroon 5',
+    subject4: 'Guns & Roses',
+    subject5: 'AFI',
+    subject6: 'Justin Biber',
+    subject7: 'Bad Bunny',
+    subject8: 'Jason Derulo',
+    subject9: 'Billy Joel',
+    subject10: 'Mark Anthony'
 };
-const verb = {
-    verb1: 'answer',
+const verbs = {
+    verb1: 'fight',
     verb2: 'apologise',
-    verb3: 'arrive',
+    verb3: 'rage',
     verb4: 'attack',
     verb5: 'belive',
     verb6: 'buy',
     verb7: 'clean',
     verb8: 'collect',
-    verb9: 'come',
+    verb9: 'cry',
     verb10: 'dance'
 };
-const object = {
-    object1: 'pizza',
-    object2: 'car',
-    object3: 'boxers',
-    object4: 'wall',
-    object5: 'guitar',
-    Adjective1: 'creative',
-    Adjective2: 'ordinary',
-    Adjective3: 'beatiful',
-    Adjective4: 'lost',
-    Adjective5: 'happy'
+const objectAdj = {
+    objAdj1: 'pizza',
+    objAdj2: 'car',
+    objAdj3: 'boxer',
+    objAdj4: 'wall',
+    objAdj5: 'guitar',
+    objAdj6: 'drum',
+    objAdj7: 'beer',
+    objAdj8: 'table',
+    objAdj9: 'phone',
+    objAdj10: 'belt'
 }
-const location = {
-    location1: 'Bolivia',
-    location2: 'Afganistan',
-    location3: 'New York',
-    location4: 'Spain',
-    location5: 'Argentina',
-    location6: 'Indonesia',
-    location7: 'Colombia',
-    location8: 'France',
-    location9: 'Miami',
-    location10: 'Buenos Aires'
+const locations = {
+    location1: 'Bar',
+    location2: 'Stadium',
+    location3: 'Club',
+    location4: 'bathroom',
+    location5: 'hotel',
+    location6: 'coffe shop',
+    location7: 'restaurant',
+    location8: 'parking',
+    location9: 'house',
+    location10: 'pool'
 };
-console.log(object[`Adjective${Math.floor(Math.random()* 10)}`])
 
 const sentence = () => {
-    randomSub = Math.random();
-    randomAdj = Math.random();
-    randomObj = Math.random();
-    randomLoc = Math.random();
+    const randomSub = subjects[`subject${Math.floor(Math.random()* 10)+1}`];
+    const randomVerb = verbs[`verb${Math.floor(Math.random()* 10)+1}`];
+    const randomObj = objectAdj[`objAdj${Math.floor(Math.random()* 10)+1}`];
+    const randomLoc = locations[`location${Math.floor(Math.random()* 10)+1}`];
+
+    return `${randomSub} ${randomVerb} a ${randomObj} in a ${randomLoc}`
 }
 
-// export {music, tryIt};
+
+const resources = {
+    music,
+    subjects,
+    verbs,
+    objectAdj,
+    locations,
+    sentence,
+}
+export default resources;
