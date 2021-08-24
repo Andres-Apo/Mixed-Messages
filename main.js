@@ -1,6 +1,6 @@
 import musicResorces from "./music.js";
 import moviesResorces from "./movies.js"
-const food = document.getElementById('food');
+import foodResorces from "./food.js"
 const generateButton = document.getElementById('generateMessage');
 const message = document.getElementById('message')
 const newMessage = document.createElement('p')
@@ -9,6 +9,7 @@ let buttonClicked = false
 const clickedHandler = () => {
     buttonClicked = true
 }
+console.log(foodResorces.food)
 
 
 const generateMessage = () => {
