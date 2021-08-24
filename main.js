@@ -1,5 +1,4 @@
 import musicResorces from "./music.js";
-const movies = document.getElementById('movies');
 const food = document.getElementById('food');
 const generateButton = document.getElementById('generateMessage');
 const message = document.getElementById('message')
