@@ -9,7 +9,6 @@ let buttonClicked = false
 const clickedHandler = () => {
     buttonClicked = true
 }
-console.log(foodResorces.food)
 
 
 const generateMessage = () => {
@@ -31,11 +30,21 @@ const generateMessage = () => {
         } else {
             newMessage.innerText = moviesResorces.sentence()
         }
+    } else if (foodResorces.food.checked === true) {
+        message.style.backgroundColor = 'rgb(192, 234, 253)';
+        if (buttonClicked === false ) {
+            newMessage.innerText = foodResorces.sentence()
+            generateButton.innerText = 'Generate Another one'
+            clickedHandler()
+        } else {
+            newMessage.innerText = foodResorces.sentence()
+        } 
     } else {
-        alert ('Please select a topic')
+            alert ('Please select a topic')
     }
 }
 
 
 
-generateButton.addEventListener('click', generateMessage)
+
+generateButton.addEventListener('click', generateMessage);
