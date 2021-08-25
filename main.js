@@ -2,8 +2,10 @@ import musicResorces from "./music.js";
 import moviesResorces from "./movies.js"
 import foodResorces from "./food.js"
 const generateButton = document.getElementById('generateMessage');
-const message = document.getElementById('message')
-const newMessage = document.createElement('p')
+const message = document.getElementById('message');
+const newMessage = document.createElement('p');
+const buttonDiv = document.getElementById('button');
+const resetButton  = document.createElement('button')
 message.appendChild(newMessage)
 let buttonClicked = false
 const clickedHandler = () => {
@@ -11,12 +13,15 @@ const clickedHandler = () => {
 }
 
 
+
 const generateMessage = () => {
     if (musicResorces.music.checked === true) {
         message.style.backgroundColor = 'rgb(192, 234, 253)';
         if (buttonClicked === false ) {
             newMessage.innerText = musicResorces.sentence()
-            generateButton.innerText = 'Generate Another one'
+            generateButton.innerText = 'Generate Another Message'
+            buttonDiv.appendChild(resetButton)
+            resetButton.innerHTML = 'Reset'
             clickedHandler()
         } else {
             newMessage.innerText = musicResorces.sentence()
@@ -26,6 +31,8 @@ const generateMessage = () => {
         if (buttonClicked === false ) {
             newMessage.innerText = moviesResorces.sentence()
             generateButton.innerText = 'Generate Another one'
+            buttonDiv.appendChild(resetButton)
+            resetButton.innerHTML = 'Reset'
             clickedHandler()
         } else {
             newMessage.innerText = moviesResorces.sentence()
@@ -35,6 +42,8 @@ const generateMessage = () => {
         if (buttonClicked === false ) {
             newMessage.innerText = foodResorces.sentence()
             generateButton.innerText = 'Generate Another one'
+            buttonDiv.appendChild(resetButton)
+            resetButton.innerHTML = 'Reset'
             clickedHandler()
         } else {
             newMessage.innerText = foodResorces.sentence()
@@ -48,3 +57,9 @@ const generateMessage = () => {
 
 
 generateButton.addEventListener('click', generateMessage);
+
+const reset = () => {
+    location.reload()
+}
+
+resetButton.addEventListener('click', reset)
