@@ -1,14 +1,12 @@
 # Mixed Messages
 
 > This project will generate a randomize message for different topics regarding the input the user will choose
-> Live demo: to be define
 
 ## Table of Contents
 
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
@@ -19,77 +17,56 @@
 
 ## General Information
 
-* Provide general information about your project here.
-
-* What problem does it (intend to) solve?
-* What is the purpose of your project?
-* Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+* This is a one of the many projects that Codecademy give us to get better improve our coding.
+* the main porpose of this project is to practice.
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
+* HTML - version 5.0
+* JavaScript - version ES6
 * Tech 3 - version 3.0
 
 ## Features
 
-List the ready features here:
-
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-## Screenshots
-
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+* The project was intented to have only one topic available and this project have three!
+* the use of html and css was not part of the challenges but they were included too!
+* The mixed messages that are generated will make you laugh!
 
 ## Setup
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+the aplication has a main structure for HTMl, JS and css. Aditionally to that the message generator parameters were separated for each topic.
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+* Music
+* Food
+* Movies
 
 ## Usage
 
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+To use it, you only need to select one of the topic you want the message generate and click on "Generate Message" to execute the chain of messages.
 
 ## Project Status
 
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_
 
 ## Room for Improvement
 
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+There is still some improvement that can be consider as new features or enhacement of the actual version
 
 Room for improvement:
 
-* Improvement to be done 1
-* Improvement to be done 2
+* Enhace the messages that are generated
 
 To do:
 
-* Feature to be added 1
-* Feature to be added 2
+* New feature to accept topics from user input
 
 ## Acknowledgements
 
 Give credit here.
 
-* This project was inspired by...
-* This project was based on [this tutorial](https://www.example.com).
-* Many thanks to...
+* This project was inspired by Codecademy
+* This project was based on [this tutorial](https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-javascript-syntax-portfolio-project/modules/fscp-mixed-messages/kanban_projects/mixed-messages).
 
 ## Contact
 
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@Apo](https://www.flynerd.pl/) - feel free to contact me!
