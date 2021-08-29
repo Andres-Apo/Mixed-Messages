@@ -16,7 +16,7 @@ const clickedHandler = () => {
 
 const generateMessage = () => {
     if (musicResorces.music.checked === true) {
-        message.style.backgroundColor = 'rgb(192, 234, 253)';
+        message.style.backgroundColor = 'rgba(192, 234, 253, 0.5)';
         if (buttonClicked === false ) {
             newMessage.innerText = musicResorces.sentence()
             generateButton.innerText = 'Generate Another Message'
@@ -27,10 +27,10 @@ const generateMessage = () => {
             newMessage.innerText = musicResorces.sentence()
         }
     } else if (moviesResorces.movies.checked === true) {
-        message.style.backgroundColor = 'rgb(192, 234, 253)';
+        message.style.backgroundColor = 'rgba(192, 234, 253, 0.5)';
         if (buttonClicked === false ) {
             newMessage.innerText = moviesResorces.sentence()
-            generateButton.innerText = 'Generate Another one'
+            generateButton.innerText = 'Generate Another Message'
             buttonDiv.appendChild(resetButton)
             resetButton.innerHTML = 'Reset'
             clickedHandler()
@@ -38,10 +38,10 @@ const generateMessage = () => {
             newMessage.innerText = moviesResorces.sentence()
         }
     } else if (foodResorces.food.checked === true) {
-        message.style.backgroundColor = 'rgb(192, 234, 253)';
+        message.style.backgroundColor = 'rgba(192, 234, 253, 0.5)';
         if (buttonClicked === false ) {
             newMessage.innerText = foodResorces.sentence()
-            generateButton.innerText = 'Generate Another one'
+            generateButton.innerText = 'Generate Another Message'
             buttonDiv.appendChild(resetButton)
             resetButton.innerHTML = 'Reset'
             clickedHandler()
