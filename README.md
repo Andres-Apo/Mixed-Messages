@@ -69,4 +69,4 @@ Give credit here.
 
 ## Contact
 
-Created by [@Apo](https://www.flynerd.pl/) - feel free to contact me!
+Created by Andres Aponte - feel free to contact me!
