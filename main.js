@@ -63,3 +63,5 @@ const reset = () => {
 }
 
 resetButton.addEventListener('click', reset)
+
+console.log('Hello Ryzen 7!')
